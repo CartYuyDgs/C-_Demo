@@ -23,17 +23,58 @@ namespace lisi
     }
 }
 
+struct student
+{
+    char name[100];
+    int number;
+};
+
+namespace std
+{
+    int itest;
+    struct student cout1;
+}
+
 
 int main()
 {
     //命名空间
-    std::cout << "Hello World!\n";
-    zhangsan::radis();
+    //std::cout << "Hello World!\n";
+    //zhangsan::radis();
     //lisi::radis2();
     //lisi::radis();
 
-    radis();
-    radis2();
+    //radis();
+    //radis2();
+
+
+    //cin,cout
+
+    //std::cout << "learn C++\n";
+
+    //std::itest = 1;
+    //strcpy_s(std::cout1.name, "aaa\n");
+
+    //std::cout << std::cout1.name;
+    //std::cout << std::cout1.number;
+
+    //std::cout << "\n------------------------\n";
+
+    /* int x = 3;
+    //std::cout << x << "的平方是：" << x * x << "\n";
+    std::cout << x << "的平方是：" << x * x << std::endl;
+    x++;
+    std::cout << x << "的平方是：" << x * x << "\n"; */
+
+
+    std::cout << "输入两个值：" << std::endl;
+    int value1 = 0, value2 = 0;
+
+    std::cin >> value1 >> value2;
+
+    std::cout << value1 << "+" << value2 << "=" << value1+value2
+        << std::endl;
+
     return 0;
 }
 
